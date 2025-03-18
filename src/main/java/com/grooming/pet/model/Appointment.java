@@ -12,10 +12,10 @@ public class Appointment {
     private int id;
     private int status;//0-new 1-filled 2-canceled
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "pet_type_id")
     private PetType petType;
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "pet_size_id")
     private PetSize petSize;
     private String groomer;
     private LocalDate appointmentDate;
